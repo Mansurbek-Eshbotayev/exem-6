@@ -1,0 +1,198 @@
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.header{
+  width: 100%;
+  max-width: 180px;
+  background-color: #212529!important;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.bar__button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+}
+
+.bar__button:hover{
+  background-color: #0d6efd;
+}
+
+.bar__button::before{
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../images/home.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+}
+
+.btn__order{
+  position: relative;
+}
+
+.btn__order::before{
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../images/order.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+}
+
+.btn__admin{
+  position: relative;
+}
+
+.btn__admin::before{
+  content: "";
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url(../images/unauthorized-person.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+}
+
+.site-main{
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(215, 215, 215, 0.796);
+}
+
+.navbar{
+  border-radius: 7px;
+}
+
+.admin__list{
+  overflow-y: scroll;
+  height: 700px;
+}
+
+.card{
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: none;
+}
+
+.card-img-top{
+  height: 130px;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.card-img-top:hover{
+  transform: scale(1.08);
+    transition: all 0.5s ease;
+    border-radius: 15px;
+}
+
+.card-text{
+  margin-bottom: 10px;
+}
+
+.price{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit__btn{
+  width: 50%;
+}
+
+.delet__btn{
+  width: 40%;
+}
+
+.show-on{
+  display: block !important;
+}
+
+.show-off{
+  display: none !important;
+}
+
+
+/* home */
+
+.card__home{
+  width: 280px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card__img{
+  height: 180px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.order__btn{
+  width: 30px;
+  height: 30px;
+  position: relative !important;
+  left: 215px;
+  background-image: url(../images/shopping-cart.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.order__img{
+  width: 30px;
+  height: 30px;
+}
+
+.war__order{
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/shopping-bag.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+}
+
+.logo__img{
+  width: 120px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.black__logo{
+  width: 100px;
+  height: 50px;
+}
+
+.modal-content{
+  background-color: #80a1a5 !important;
+}
+
+.form-control{
+  background-color: #e3e3e3;
+}

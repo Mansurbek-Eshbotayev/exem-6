@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Home</title>
+</head>
+<body>
+  
+  <header class="header p-3">
+    <a class="logo__link" href="./index.html">
+      <img class="logo__img" src="./images/white_logo.png" alt="site__logo">
+    </a>
+    <span class="line "></span>
+    <div class="bar">
+      <div>
+        <button class="bar__button home__btn fs-5 d-flex align-items-center w-100 p-2 " type="button">
+          Home
+        </button>
+        <button class="bar__button btn__order fs-5 d-flex align-items-center w-100 p-2" type="button">
+          Orders
+        </button>
+        <button class="bar__button btn__admin fs-5 d-flex align-items-center w-100 p-2" type="button">
+          Admin
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <main class="site-main">
+    
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="black__logo" src="./images/black__logo.png" alt="site__logo">
+        </a>
+        
+        <div>
+          <button type="button" class="war__order me-3 show-off position-relative">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            </span>
+          </button>
+          
+          <button type="button" class="btn btn-success add__product " data-bs-toggle="modal" data-bs-target="#exampleModalNew">
+            Add new product
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="wrap__modal">
+      <form class="form__pro" method="POST" autocomplete="off">
+        <div class="modal fade" id="exampleModalNew" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Add new product your shop</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input class="pro__name form-control mb-3" type="text" name="pro_name" placeholder="entr product name">
+                <input class="pro__desc form-control mb-3" type="text" name="pro_desc" placeholder="entr product description">
+                <input class="pro__img form-control mb-3" type="file" name="pro_img" placeholder="entr product img">
+                <input class="pro__price form-control mb-2" type="text" name="pro_price" placeholder="entr product price">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="form__user-btn btn btn-success" type="submit">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <section class="mt-3 admin__list bg-white p-3">
+      <div class="container">
+        
+        <ul class="todo__list list-unstyled d-flex flex-wrap justify-content-between mt-2 ">
+          
+        </ul>
+        <ul class="ordeing">
+          
+        </ul>
+      </div>
+    </section>
+    
+  </main>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog new__modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">You can edition produc</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="modal__form" method="POST">
+            <input class="form-control modal__name mb-3" type="text" name="pro_name" placeholder="entr product name">
+            <input class="form-control modal__desc mb-3" type="text" name="pro_desc" placeholder="entr product description">
+            <input class="form-control modal__img mb-3" type="file" name="pro_img" placeholder="entr product img">
+            <input class="form-control modal__price mb-3" type="text" name="pro_price" placeholder="entr product price">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary sub__modal" data-bs-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  
+  <script src="./js/main.js"></script>
+  <script src="./js/editdelet.js"></script>
+  <script src="./js/order.js"></script>
+</body>
+</html>
